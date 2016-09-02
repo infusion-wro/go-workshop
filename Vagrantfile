@@ -26,6 +26,6 @@ Vagrant.configure(2) do |config|
     sudo curl -O https://storage.googleapis.com/golang/go1.7.linux-amd64.tar.gz
     sudo tar -xvf go1.7.linux-amd64.tar.gz
     sudo mv go /usr/local
-    export PATH=$PATH:/usr/local/go/bin
+    echo 'export PATH=$PATH:/usr/local/go/bin' >> ~/.profile
   SHELL
 end
